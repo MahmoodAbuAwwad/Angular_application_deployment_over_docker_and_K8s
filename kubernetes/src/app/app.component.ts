@@ -9,11 +9,11 @@ export class AppComponent {
   @ViewChild('todoBar') todoBar;
   title = 'kubernetes';
   todos = [
-    'Hello',
-    'world'
   ];
 
-  onAdd(){
-    this.todos.push(this.todoBar.nativeElement.value);
+  onAdd (){
+    if (this.todoBar.nativeElement.value!==""){
+      this.todos.push(this.todoBar.nativeElement.value);
+    }
   }
 }
