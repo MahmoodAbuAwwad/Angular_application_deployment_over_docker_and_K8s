@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiHost: 'some API'
+  apiHost: 'http://localhost:5000'
 
 };
