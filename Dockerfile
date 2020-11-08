@@ -20,4 +20,3 @@ EXPOSE 80
 EXPOSE 8080
 
 CMD ["/bin/sh",  "-c",  "envsubst < /usr/share/nginx/html/assets/env.template.js > /usr/share/nginx/html/assets/env.js"]
-
