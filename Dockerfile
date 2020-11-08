@@ -8,7 +8,7 @@ COPY kubernetes/package*.json /app/
 WORKDIR /app
 RUN npm install
 COPY kubernetes/. /app
-RUN npm run build  --prod
+RUN npm run build
 
 
 FROM nginx:latest
