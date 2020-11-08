@@ -18,4 +18,6 @@ RUN cp /usr/share/nginx/html/kubernetes/* /usr/share/nginx/html/.
 
 EXPOSE 80
 EXPOSE 8080
-EXPOSE 4100
+
+CMD ["/bin/sh",  "-c",  "envsubst < /usr/share/nginx/html/assets/env.template.js > /usr/share/nginx/html/assets/env.js"]
+

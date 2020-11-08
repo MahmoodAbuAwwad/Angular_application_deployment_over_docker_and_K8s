@@ -14,15 +14,14 @@ export class ConfigService {
 
   // tslint:disable-next-line:typedef
   getData() {
-    console.log( this.HostAPI + this.ApiGetData);
-    return this.http.get( this.HostAPI + this.ApiGetData);
+    return this.http.get( "http://" + this.HostAPI + ":5000" + this.ApiGetData);
   }
 
   // tslint:disable-next-line:typedef
   addData(text: string){
 
 
-    const url = this.HostAPI + this.ApiAddData + text;
+    const url = "http://"+this.HostAPI+":5000" + this.ApiAddData + text;
     return this.http.post(url , text, {responseType: 'text'}).subscribe();
   }
 }

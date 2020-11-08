@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  apiHost: 'http://192.168.204.226:5000'
 
+  apiHost: window["env"]["apiHost"]  || "default",
+  debug: window["env"]["debug"] || false
 };
 
 

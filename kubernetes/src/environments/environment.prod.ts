@@ -1,5 +1,8 @@
 export const environment = {
   production: true,
-  apiHost: 'http://192.168.204.226:5000'
+
+
+  apiHost: window["env"]["apiHost"] ,
+  debug: window["env"]["debug"] || false
 
 };
