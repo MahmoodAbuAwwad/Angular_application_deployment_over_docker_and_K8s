@@ -14,6 +14,7 @@ RUN npm run build  --prod
 FROM nginx:latest
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=build /app/dist/.  /usr/share/nginx/html
+RUN cp /usr/share/nginx/html/kubernetes/* /usr/share/nginx/html/.
 
 EXPOSE 80
 EXPOSE 8080
