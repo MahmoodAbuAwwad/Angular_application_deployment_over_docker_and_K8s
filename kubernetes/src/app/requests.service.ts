@@ -14,6 +14,7 @@ export class ConfigService {
 
   // tslint:disable-next-line:typedef
   getData() {
+    console.log( this.HostAPI + this.ApiGetData);
     return this.http.get( this.HostAPI + this.ApiGetData);
   }
 
