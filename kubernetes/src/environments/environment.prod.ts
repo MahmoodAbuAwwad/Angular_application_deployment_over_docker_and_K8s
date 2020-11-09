@@ -2,7 +2,7 @@ export const environment = {
   production: true,
 
 
-  apiHost: window["env"]["apiHost"] ,
+  API_URL: window["env"]["API_URL"] ,
   debug: window["env"]["debug"] || false
 
 };
