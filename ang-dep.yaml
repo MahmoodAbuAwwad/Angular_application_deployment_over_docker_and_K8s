@@ -14,6 +14,10 @@ spec:
   spec:
    containers:
     - name: frontend
-      image: angular-app
+      image: mahmoodabuawwad/frontend
+      env:
+      - name: API_URL
+        value: 192.168.204.226
+      imagePullPolicy: Always
       ports: 
        - containerPort: 80
