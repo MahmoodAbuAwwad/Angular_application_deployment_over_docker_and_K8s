@@ -9,7 +9,7 @@ export class ConfigService {
 
   ApiGetData = '/api/v1/fetch';
   ApiAddData = '/api/v1/add/';
-  HostAPI = environment.apiHost;
+  HostAPI = environment.API_URL;
 
 
   // tslint:disable-next-line:typedef
