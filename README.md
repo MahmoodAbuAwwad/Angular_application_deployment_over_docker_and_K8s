@@ -10,4 +10,4 @@ Docker build . -t image_custom_name --no-cache
 to Run Container
 
 
-docker run -d --name Container name --env API_URL="Custom IP" my-container
+docker run -d --net=host --name nameConatiner -e "API_URL=192.168.204.226"  IMAGE_NAME
