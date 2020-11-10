@@ -6,7 +6,7 @@ spec:
  replicas: 2
  selector:
   matchLabels:
-   app: angular 
+   app: angular
  template:
   metadata:
    labels:
@@ -17,7 +17,17 @@ spec:
       image: mahmoodabuawwad/frontend
       env:
       - name: API_URL
-        value: 192.168.204.226
+        value: "192.168.205.155"
+      - name: PORT  # desired in ang-service.yaml
+        value: "30007"
       imagePullPolicy: Always
-      ports: 
+      ports:
        - containerPort: 80
+~                                                                                         
+~                                                                                         
+~                                                                                         
+~                                                                                         
+~                                                                                         
+~                                                                                         
+~                                                                                         
+~                        
