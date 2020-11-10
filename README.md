@@ -11,3 +11,6 @@ to Run Container
 
 
 docker run -d --net=host --name nameConatiner -e "API_URL=192.168.204.226"  IMAGE_NAME
+
+
+ENV vars specified both inside Dockerfile and ( ang-dep && ang-ser ) based deployment env
