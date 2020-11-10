@@ -12,10 +12,3 @@ spec:
    nodePort: 30017
  selector:
   app: angular
-~                                                                                         
-~                                                                                         
-~                                                                                         
-~                                                                                         
-~                                                                                         
-~                                                                                         
-~                   
