@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-
+  API_URL: window["env"]["PORT"]  || "default",
   API_URL: window["env"]["API_URL"]  || "default",
   debug: window["env"]["debug"] || false
 };
