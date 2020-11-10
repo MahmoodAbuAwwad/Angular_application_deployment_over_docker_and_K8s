@@ -18,7 +18,7 @@ spec:
       env:
       - name: API_URL
         value: "192.168.205.155"
-      - name: PORT  # desired in ang-service.yaml
+      - name: PORT  # desired in flask-service.yaml
         value: "30007"
       imagePullPolicy: Always
       ports:

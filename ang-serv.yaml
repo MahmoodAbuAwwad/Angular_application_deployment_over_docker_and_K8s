@@ -9,7 +9,7 @@ spec:
  ports:
  - port: 80
    protocol: TCP
-   nodePort: 30007
+   nodePort: 30017
  selector:
   app: angular
 ~                                                                                         
