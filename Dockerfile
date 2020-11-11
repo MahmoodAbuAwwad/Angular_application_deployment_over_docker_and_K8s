@@ -19,5 +19,6 @@ RUN cp -r /usr/share/nginx/html/kubernetes/* /usr/share/nginx/html/.
 EXPOSE 80
 EXPOSE 8080
 
+ENV PORT=5000
 ENV API_URL = '192.168.204.226'
 CMD ["/bin/sh","-c","envsubst < /usr/share/nginx/html/assets/env.template.js > /usr/share/nginx/html/assets/env.js && exec nginx -g 'daemon off;'"]
