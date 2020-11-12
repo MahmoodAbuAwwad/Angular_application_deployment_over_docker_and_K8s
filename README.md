@@ -7,10 +7,17 @@ CD to Directory
 Docker build . -t image_custom_name --no-cache
 
 
-to Run Container
+ENV vars specified both inside ang-config-maps.txt and ( ang-dep && ang-ser )
+
+--commands:
+
+kubectl create -f ang-config-map.yaml 
+kubectl create -f ang-dep.yaml 
+kubectl apply -f ang-serv.yaml 
 
 
-docker run -d --net=host --name nameConatiner -e "API_URL=192.168.204.226"  IMAGE_NAME
+* In Browser 
+
+192.168.205.155:30017
 
 
-ENV vars specified both inside Dockerfile and ( ang-dep && ang-ser ) based deployment env
