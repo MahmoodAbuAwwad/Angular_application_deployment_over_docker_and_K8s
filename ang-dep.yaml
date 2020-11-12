@@ -17,9 +17,15 @@ spec:
       image: mahmoodabuawwad/frontend
       env:
       - name: API_URL
-        value: "192.168.205.155"
-      - name: PORT  # desired in flask-service.yaml
-        value: "30007"
+        valueFrom:
+         configMapKeyRef:
+          name: angular-config
+          key: API_URL
+      - name: PORT
+        valueFrom:
+         configMapKeyRef:
+          name: angular-config
+          key: PORT
       imagePullPolicy: Always
       ports:
        - containerPort: 80
