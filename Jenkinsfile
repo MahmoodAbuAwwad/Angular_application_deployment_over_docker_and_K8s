@@ -5,16 +5,16 @@ pipeline{
         choice(name: "VERSION",choices: ['2.1.0','2.1.1','2.1.2'], description:" this is des")
         booleanParam(name:'executeTests' ,defaultValue: true, description: "")
     }
-    environment{
-        when{
-            expression{
-                params.executeTests == true 
-                params.VERSION == '2.1.0'
-            }
-        }
-        NEW_VERSION = '1.3.0'
-        SERVER_CREDENTIALS = creaentials('cred id in jenkis')
-    }
+    // environment{
+    //     when{
+    //         expression{
+    //             params.executeTests == true 
+    //             params.VERSION == '2.1.0'
+    //         }
+    //     }
+    //     NEW_VERSION = '1.3.0'
+    //     SERVER_CREDENTIALS = creaentials('cred id in jenkis')
+    // }
 
     stages{
         stage("clean up"){
@@ -49,11 +49,11 @@ pipeline{
             }
         }
     }
-    post{
-        always {
-             //always executed
-            //sending emails to tell about status
-        }
+    // post{
+    //     always {
+    //          //always executed
+    //         //sending emails to tell about status
+    //     }
 
     }
 }
