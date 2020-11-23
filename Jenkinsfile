@@ -13,7 +13,7 @@ pipeline{
     //         }
     //     }
     //     NEW_VERSION = '1.3.0'
-    //     SERVER_CREDENTIALS = creaentials('cred id in jenkis')
+    //     SERVER_CREDENTIALS = credentials('cred id in jenkis')
     // }
 
     stages{
