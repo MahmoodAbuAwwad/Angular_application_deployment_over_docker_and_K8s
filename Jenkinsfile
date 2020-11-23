@@ -19,7 +19,7 @@ pipeline {
     }
 
     stage('Build') {
-      steps { sh 'npm run-script build' }  //must specifiy environment variable :)
+      steps { sh 'npm run-script build' }
     }
   }
 }
